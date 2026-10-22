@@ -490,4 +490,10 @@ else:
         "The selected locality's rent equals or exceeds your salary. "
         "Consider a more affordable rental option."
     )
+    
+    st.divider()
+
+    if st.button("Continue to Financial Planning"):
+        st.session_state.page = 6
+        st.rerun()
 
